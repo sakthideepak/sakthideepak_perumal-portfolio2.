@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="portfolio.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="na" id="whole_container">
@@ -15,43 +16,53 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light" >
             <div class="container-fluid">
                 <a class="navbar-brand" id="brand"href="#">
-                  <h2 width="30px">SAKTHIDEEPAK.</h2></a>
+                  <h2 width="30px">Sakthideepak.</h2></a>
                   <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#rightsidecontent" aria-controls="rightsidecontent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
         <div class="collapse navbar-collapse" id="rightsidecontent">
             <ul class="nav navbar-nav ms-auto" id="home">
-                <li class="nav-item"><a href="#Home" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="#About" class="nav-link">ABOUT</a></li>
-                <li class="nav-item"><a href="#Education" class="nav-link">EDUCATION & SKILLS</a></li>
-                <li class="nav-item"><a href="#project" class="nav-link">PROJECTS</a></li>
-                <li class="nav-item"><a href="#CONTACT" class="nav-link">CONTACT</a></li>
+                <li class="nav-item"><a href="#Home" class="nav-link"><button type="button" class="btn btn-light"><i class="bi bi-house"></i>HOME</button></a></li>
+                <li class="nav-item"><a href="#About" class="nav-link"><button type="button" class="btn btn-light"><i class="bi bi-file-person"></i>ABOUT</button></a></li>
+                <li class="nav-item"><a href="#Education" class="nav-link"><button type="button" class="btn btn-light"><i class="bi bi-journal"></i>EDUCATION & SKILLS</button></a></li>
+                <li class="nav-item"><a href="#project" class="nav-link"><button type="button" class="btn btn-light"><i class="bi bi-code-slash"></i>PROJECTS</button></a></li>
+                <li class="nav-item"><a href="#Certification" class="nav-link"><button type="button" class="btn btn-light"><i class="bi bi-patch-check"></i>CERTIFICATION</button></a></li>
+                <li class="nav-item"><a href="#CONTACT" class="nav-link"><button type="button" class="btn btn-light"><i class="bi bi-telephone"></i>CONTACT</button></a></li>
             </ul>
             </div>
         </div>
          </nav>
         </header>
-        <marquee class="markee">For better experience change to desktop view</marquee>
+        <marquee class="markee">For a better experience, View it on a desktop or laptop.</marquee>
   <div class="row col-12 ms-1" id="Home">
       <div class="col-lg-6  col-md-6  col-sm-12 information ">
-        <span class="about">
-         <h1> Front-End Developer & web Developer  </h1>
-         <h3>Hi, I am <span > Sakthideepak, My passions are design and creativity. </span></h3>
+        <div class="about" >
+          <h1>Hello, I'm a</h1>
+          <span class="first_one" style="color: rgb(0, 0, 0);"   id="hello"></span>
+         <span class="second_one" style="font-family: Allura;" id="hello"> </span>
+        </div>
+        <h3>My name is <span > Sakthideepak, My passions are design and creativity. </span></h3>
+        <div class="connect1" >
+          <a href="mailto:sakthideepak.sp@gmail.com" target="_blank"><i class="bi-envelope-fill"></i></a>
+          <a href="https://github.com/sakthideepak" target="_blank"><i class="bi-github"></i></a>
+          <a href="#" target="_blank"><i class="bi-linkedin"></i></a>
+          <a href="#"><i class="bi-facebook"></i></a>
+          <a href="#"><i class="bi-instagram"></i></a>
          
-        </span>
-      <button type="button" class="btn resume mt-3"><a id="Download" href="SAKTHIDEEPAK _P_RESUME.pdf" target="_blank">RESUME</a></button>
+        </div>
+      <!-- <button type="button" class="btn resume mt-3"><a id="Download" href="SAKTHIDEEPAK _P_RESUME.pdf.pdf " target="_blank">RESUME</a></button> -->
       </div>
-    <div class="col-lg-6 col-md-6  col-sm-12  image">
+    <div class="col-lg-6 col-md-6  col-sm-12  image" >
         <div class="contain"></div>
         <div class="contain1"></div>
-      <img src="photos/sakthi.png"  class="mt-1" height="600px" width="400px">
+      <img src="photos/sakthi.png"  class="mt-1" height="600px" width="400px" data-aos="fade-left" data-aos-offset="200" data-aos-delay="300" data-aos-duration="500"  data-aos-easing="ease-in-out">
     </div>
   </div>
 
   <section class="container-fluid">
     <div class="row_1 mt-1" id="About">
       <div class="bg_image">
-        <div class="About_section">
+        <div class="About_section" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300"   data-aos-easing="ease-in-out">
           <h2>About myself</h2>
           <div class="about_details row">
             <img src="photos/sakthideepak_p.jpeg" class="col-lg-6 col-sm-12"  >
@@ -59,17 +70,17 @@
            <p class="col-lg-6 col-sm-12 ">A passionate lad with never-ending perseverance towards accomplishments in life who is very enthusiastic to explore and learn new sought in website development and is a creative thinker that loves creating websites than any. A vibrant youngman very optimistic in all aspects of life seeking a job role that fit into his passion of developing websites which are visually appealing and one who serves every purpose. The portfolio figures out his way of making art(websites).</p>
            
         </div>
-        <button type="button" class="btn resume"><a id="Download" href="SAKTHIDEEPAK _P_RESUME.pdf" target="_blank">View Resume</a></button>
+        <button type="button" class="btn resume"><a id="Download" href="SAKTHIDEEPAK _P_RESUME.pdf.pdf " target="_blank">View Resume</a></button>
         </div>
       </div>
         
     </div>
     </section>
-    <div class="section_2 container-fluid " id="Education">
+    <div class="section_2 container-fluid pb-5" id="Education">
 
       <h1 class="text-center col-12 pb-3 ed-sk">Education & Skills</h1>
       <div class="makeflex row  ">
-        <div class="Education  col-lg-6  col-md-12 pb-4">
+        <div class="Education  col-lg-6  col-md-12 pb-4" data-aos="fade-right"data-aos-offset="200" data-aos-delay="300"   data-aos-easing="ease-in-out">
           <div class="years">
             <h6 class="year1">2019-2023</h6>
             <h6 class="year">2018-2019</h6>
@@ -112,31 +123,19 @@
             </div>
           </div>
         </div>
-        <div class="sks col-lg-6 col-md-12 pb-3">
-         <div class="skill_name">HTML</div>
-       <div class="skill_bar">
-         <div class="skill_percent" per="90%"  style=" max-width:90%";></div>
-       </div>
-         <div class="skill_name">CSS</div>
-       <div class="skill_bar">
-         <div class="skill_percent" per="80%" style=" max-width:80%";></div>
-       </div>
-         <div class="skill_name">BOOTSTRAP</div>
-       <div class="skill_bar">
-         <div class="skill_percent" per="75%" style=" max-width:75%";></div>
-       </div>
-         <div class="skill_name">JAVASCRIPT</div>
-       <div class="skill_bar ">
-         <div class="skill_percent " per="70%" style=" max-width:70%";></div>
-       </div>
-       <div class="skill_name">SQL/MySQL</div>
-       <div class="skill_bar ">
-        <div class="skill_percent " per="70%" style=" max-width:60%";></div>
-      </div>
-       <div class="skill_name">MS Excel</div>
-       <div class="skill_bar ">
-        <div class="skill_percent " per="70%" style=" max-width:50%";></div>
-      </div>
+
+        <div class="sks col-lg-6 col-md-12 pb-3"  data-aos="fade-left" data-aos-offset="200" data-aos-delay="300"   data-aos-easing="ease-in-out">
+      
+       <button type="button" class="btn btn-light mt-3 ">HTML</button>
+       <button type="button" class="btn btn-light mt-3  ">CSS</button>
+       <button type="button" class="btn btn-light mt-3 ">BOOTSTRAP</button>
+       <button type="button" class="btn btn-light mt-3 ">JavaScript</button>
+       <button type="button" class="btn btn-light mt-3 ">Responsive Design</button>
+       <button type="button" class="btn btn-light mt-3 ">MS Excel</button>
+       <button type="button" class="btn btn-light mt-3 ">Power Query/Power Pivot</button>
+       <!-- <button type="button" class="btn btn-light mt-3 ">SQL</button> -->
+       <button type="button" class="btn btn-light mt-3">Data Cleaning</button>
+       <!-- <button type="button" class="btn btn-light mt-3">Power BI</button> -->
        </div>
 
     </div>
@@ -146,35 +145,146 @@
       <div class="about_project text-center col-lg-5"><h4>The various kinds of project , responsive websites, and the use of several web development languages</h4>
       <div class="btn into mt-3">Visit Below <i class="bi bi-arrow-down-square"></i></div>
     </div>
-      <div  class="project row ">
-        <div class="git col-lg-4 col-md-6  col-sm-12 ">
+      <div  class="project row " >
+        <div class="git col-lg-4 col-md-6  col-sm-12 " data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
           <a href="https://sakthideepak.github.io/OTT/" target="_blank"><button class="btn btn-outline-light links">View Website <i class="bi bi-hand-index"></i></button></a>
            <img src="photos/man-watching-streaming-service-his-laptop.jpg">
         </div>
-        <div class="git col-lg-4  col-md-6 col-sm-12 ">
+        <div class="git col-lg-4  col-md-6 col-sm-12 " data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
           <a href=" https://sakthideepak.github.io/Website-Tour-guide/" target="_blank"><button class="btn btn-outline-light links">View Website <i class="bi bi-hand-index"></i></button></a>
           <img src="photos/janis-oppliger-dRHE-XF7wls-unsplash.jpg" >
         </div>
-        <div class="git col-lg-4 col-md-6 col-sm-12 ">
+        <div class="git col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
           <a href="https://sakthideepak.github.io/calculator/" target="_blank"><button class="btn btn-outline-light links">View Website <i class="bi bi-hand-index"></i></button></a>
           <img src="photos/kelly-sikkema-3-Tc_5LROrM-unsplash.jpg" >
         </div>
-        <div class="git col-lg-4 col-md-6 col-sm-12 ">
+        <div class="git col-lg-4 col-md-6 col-sm-12 " data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
           <a href="https://sakthideepak.github.io/test/" target="_blank"><button class="btn btn-outline-light links">View Website <i class="bi bi-hand-index"></i></button></a>
           <img src="photos/original-07ea8fcf2df18f99f79dcb160fbb37eb.jpg" >
         </div>
-        <div class="git col-lg-4 col-md-6  col-sm-12 ">
+        <div class="git col-lg-4 col-md-6  col-sm-12 " data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
           <a href="#" target="_blank"><button class="btn btn-outline-light links">Visit Website <i class="bi bi-hand-index"></i></button></a>
           <img src="photos/joshua-aragon-BMnhuwFYr7w-unsplash.jpg" >
         </div>
-        <div class="git col-lg-4 col-md-6 pb-5 col-sm-12 ">
+        <div class="git col-lg-4 col-md-6 pb-5 col-sm-12 " data-aos="zoom-in-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
           <a href="#" target="_blank"><button class="btn btn-outline-light links">View Website <i class="bi bi-hand-index"></i> </button></a>
           <img src="photos/man-watching-streaming-service-his-laptop.jpg" >
         </div>
       </div>
      </div>
+
+     <div class="Certi col-12 container-fluid" id="Certification">
+      <div class="Certification">
+  
+        <h1 class="text-center col-12 pro" style="color: rgb(255, 255, 255);">Certification</h1>
+     <div class="Certificates col-lg-10 mt-5" data-aos="flip-up" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingone">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+             <strong>Excel: Mother of Business Intelligence    </strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="about_duration">
+                <P>Duration:April-2024 to April-2024</p><h6>GUID:CB-51-300739</h6></span>
+                  <h5>Things That I Learn From This Course:</h5>
+                  <strong>1.Excel Fundamentals:</strong>Start with the basics.I Learn about cells, rows, columns, and basic formulas.
+                  <strong>2.Data Analysis Techniques:</strong> Dive into various data analysis techniques such as sorting, filtering, and summarizing data effectively.
+                  <strong>3.Formulas and Functions:</strong> Master advanced formulas and functions like VLOOKUP, INDEX-MATCH, SUMIFS, and COUNTIFS to manipulate and analyze data efficiently.
+                  <strong>4.PivotTables and PivotCharts:</strong> Understand how to create PivotTables and PivotCharts to analyze large datasets and gain insights quickly.
+                  <strong>5.Data Visualization:</strong> Learn to create visually appealing charts and graphs to present your findings effectively.
+                  <strong>6.Data Cleaning and Transformation:</strong> Explore techniques for cleaning and transforming messy data into a usable format for analysis.
+                  <strong>7.Statistical Analysis:</strong> Gain an understanding of basic statistical concepts and learn how to perform statistical analysis using Excel.
+                  <strong>8.Real-World Scenarios:</strong> Work on practical exercises and case studies that mimic real-world scenarios faced by data analysts.
+              </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <strong>Data Analytics and Visualization Job Simulation</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="about_duration">
+                <P>Duration:01-March-2024 to 13-March-2024</p><h6>UVID:sr7JAQeX64nzwW3pG</h6></span>
+                  <h5>Things That I Learn From This Course:</h5>
+                 Through the Data Analytics and Visualization Job Simulation, I've gained invaluable insights and skills that have equipped me to excel in the field of data analytics. 
+                 From mastering fundamental data analysis techniques to harnessing the power of advanced visualization tools, this experience has provided me with a comprehensive understanding of manipulating and interpreting data to derive actionable insights.
+                 Additionally, I've honed my problem-solving abilities by tackling real-world scenarios and simulated projects, ensuring that I'm well-prepared to navigate the complexities of data-driven decision-making. 
+                 Overall, this simulation has been instrumental in sharpening my analytical prowess and preparing me for success in the dynamic world of data analytics and visualization.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+             <strong>Front End Web Development </strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <span class="about_duration">
+                <P>Duration:july-2023 to november-2023</p><h6></h6></span>
+                  <h5>Things That I Learn From This Course:</h5>
+                   Through the web development course, I've learned how to create websites from scratch. I started with the basic building blocks of the web, like HTML, which is used to structure web pages. With HTML, I can create headings, paragraphs, lists, links, and images, giving structure to my content.
+                   Then, I learned about CSS, which is used to style web pages and make them look good. With CSS, I can change the color, size, font, and layout of elements on a webpage. For example, I can make text bold or italic, change the background color of a section, or add spacing between elements.
+                   I also learned about JavaScript, which adds interactivity to web pages. With JavaScript, I can make elements appear or disappear, create animations, validate forms, and much more. It's like adding a brain to my website, making it more dynamic and engaging for users.
+                   Additionally, I explored frameworks and libraries like Bootstrap and jQuery, which help speed up the development process by providing pre-made templates and components. These tools make it easier to create responsive and mobile-friendly websites that look great on any device.
+                   Overall, the web development course has given me the skills to bring my ideas to life on the web. I can now create websites that are not only functional but also visually appealing and user-friendly, opening up exciting opportunities for me in the world of web development
+            </div>
+          </div>
+        </div>
+        <!-- <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <strong>Power BI Data Analytics for All Levels 2.0</strong>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <P>Duration:01-May-2024 to 31-May-2024</p><h6>UVID:</h6></span>
+                  <h5>Things That I Learn From This Course:</h5>
+                  <strong>1.Connecting to Data Sources:</strong>
+                  Data Import: Importing data from various sources such as Excel, CSV, SQL Server, and online services.
+                  Data Transformation: Using Power Query Editor to clean and transform data (e.g., removing duplicates, filtering rows, changing data types).
+                  <strong>2.Basic Data Modeling:</strong>
+                  Relationships: Creating and managing relationships between tables.
+                  Data Types: Understanding different data types and their implications.
+                 <strong>3.Creating Basic Visualizations:</strong>
+                  Charts and Graphs: Creating simple visualizations like bar charts, line charts, pie charts, and tables.
+                  Formatting Visuals: Customizing visuals with formatting options (e.g., colors, labels, titles).
+                 <strong>4.Advanced Data Modeling:</strong>
+                  Calculated Columns and Measures: Creating calculated columns and measures using DAX (Data Analysis Expressions).
+                  Hierarchies: Building and using hierarchies in your data model.
+                 <strong>5.Complex Visualizations:</strong>
+                  Advanced Charts: Creating more complex visualizations like scatter plots, waterfall charts, and maps.
+                  Custom Visuals: Importing and using custom visuals from the Power BI marketplace.
+                 <strong>6.Interactive Dashboards:</strong>
+                  Slicers and Filters: Adding slicers and filters to reports for interactivity.
+                  Drillthrough and Drilldown: Implementing drillthrough pages and drilldown functionality to explore data in depth.
+                 <strong>7.DAX (Data Analysis Expressions):</strong>
+                  Basic DAX Functions: Using basic DAX functions like SUM, AVERAGE, COUNTROWS, and RELATED.
+                  Time Intelligence: Implementing time intelligence functions like TOTALYTD, SAMEPERIODLASTYEAR, and DATEADD for time-based calculations.
+                 <strong>8.Power BI Service Features:</strong> 
+                  Dashboards: Creating and sharing dashboards in Power BI Service.
+                  Power BI Apps: Packaging and distributing Power BI content as apps.
+            </div>
+          </div>
+        </div> -->
+      </div>
+     </div>
+
+     
+     </div>
+
+
    <div class="section_5 mt-1 pb-5 row container-fluid" id="CONTACT">
-     <div class=" col-lg-6  cont ">
+     <div class=" col-lg-6  cont " data-aos="fade-up"
+     data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
       <h1 class=" col-12 contact ps-5">Contact Me</h1>
       <div class="line"></div>
       <ul class="icons">
@@ -205,7 +315,8 @@
        
       </div>
      </div>
-     <form id="count2" class="col-lg-6">
+     <form id="count2" class="col-lg-6" data-aos="fade-up"
+     data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300" data-aos-easing="ease-in-out">
      <div>
      <label for="name">Name:</label>
        <input type="text"  id="Name" name="name" size="40"style="height:35px" class="text-dark " required>
@@ -220,7 +331,8 @@
        </div>
        <div></div>
        <button type="submit"  class="btn  mt-3  mb-4 slide_from_left">Sent Message <i class="bi bi-arrow-right-square"></i></button>
-        </div>        </form>
+        </div>        
+      </form>
         
      </div>
      <footer style="background-color: rgb(35, 33, 33);" class="container-fluid">
@@ -235,7 +347,12 @@
      </div>
     </div>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="porofolio.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
