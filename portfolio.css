@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: Allura;
-    src:url(Allura-Regular.ttf);
+     src:url(Roboto_Slab/Allura-Regular.ttf);
 }
 *{
     overflow-x: hidden;
