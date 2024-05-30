@@ -2,9 +2,16 @@
     font-family: customFonts;
     src: url(Roboto_Slab/static/RobotoSlab-SemiBold.ttf);
 }
+@font-face{
+    font-family: Allura;
+    src:url(Allura-Regular.ttf);
+}
 *{
     overflow-x: hidden;
    
+}
+html{
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -15,7 +22,7 @@
     --secondary-bg-color:whitesmokesmoke;
   }
 #brand h2{
-    font-family: customFonts;
+    font-family:Allura;
     color:var(--secondary-bg-color);
 }
 
@@ -32,37 +39,27 @@
 #home li a{
     color: var(--secondary-bg-color);
 }
-#home li a:hover{
-    color: var(--main-bg-color);
-    text-decoration: underline ;
 
-
-    
-}
 .custom-toggler.navbar-toggler {
     border-color: var(--secondary-bg-color);
 }
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url(
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
-
-
 #header h4,h1,h3,h2,h5,h6{ 
     position: relative;
- 
-
 }
    
-.about h1{  
-     margin-top:200px;
-}
-.about{
+.about {
     text-align: start;
-    
+    animation: left-right 1.5s ease-in-out;
+    margin-top:200px;
+    margin-left: 100px;
 }
+
 @keyframes left-right {
     0% {
       transform: translateX(-50%);
@@ -71,23 +68,24 @@
       transform: translateX(0%);
     }
   }
+  
 
 .information h1{
-margin-left: 100px; 
+ 
 animation: left-right 1.5s ease-in-out;
 color: black;
-font-family: "Shippori Mincho", serif;
-font-size: 57px;
-font-weight: 400;
+/* font-family: "Shippori Mincho", serif; */
+font-size: 33px;
+font-weight: 300;
 width:65%;
 letter-spacing: -2px;
 }
-.information h2{
+/* .information h2{
 margin-left: 100px; 
 animation: left-right 1.5s ease-in-out;
 color: black;
 
-}
+} */
 .information h3{
 margin-left: 100px; 
 animation: left-right 1.5s ease-in-out;
@@ -97,11 +95,45 @@ font-size: 33px;
 font-weight: 300;
 }
 
-.information button{
+.about #hello {
+    position: relative;
+    color:rgb(2, 59, 144);
+    font-size: 50px;
+    font-weight:600;
+    overflow: hidden;
+}
+.about .first_one{
+    font-family:customFonts;
+    font-size:10px; 
+    /* font-weight: 300; */
+}
+
+.second_one:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:var(--main-bg-color);
+    border-left: 2px solid blue;
+    animation: animate 4s steps(12) infinite;
+  }
+  
+  @keyframes animate{
+    40%, 60%{
+      left:100%;
+    }
+    100%{
+      left:0%;
+    }
+  }
+
+/* .information button{
     margin-left:200px; 
     width: 100px;
     animation: left-right 1.5s ease-in-out;  
-}
+} */
 .image{
     background-color: var(--secondary-bg-color);
 
@@ -138,6 +170,25 @@ font-weight: 300;
     filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
 }
 
+.connect1{
+    margin:30px 0px 0px 92px;
+   
+ 
+ }
+ .connect1 a{
+ color:rgb(0, 0, 0);
+}
+ .connect1 i{
+    margin: 10px;
+    font-size:25px;
+    text-decoration: none;
+ }
+ .connect1 i:hover{
+    color:whitesmoke;
+    /* border: 2px solid rgb(0, 0, 0); */
+    filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
+    
+ }
 .resume{
     background-color:whitesmoke;
     
@@ -162,7 +213,7 @@ font-weight: 300;
 .bg_image{
     background-image: url(photos/about\ pg.jpg);
     width:auto;
-    height:800px;
+    height:auto;
     background-repeat: no-repeat;
     background-size: cover;
     display:flex;
@@ -175,6 +226,7 @@ font-weight: 300;
     height:auto;
     background-color: aliceblue;
    /* display: flex; */
+   margin:100px 0px 100px 0px;
 
 }
 .About_section h2{
@@ -320,39 +372,7 @@ font-weight: 300;
     padding:0 20px;
     margin: 0 auto;
 }
-.skill_name{
-    margin:10px 0;
-    
-}
-.skill_bar{
-    height:14px;
-    background-color: aliceblue;
-    margin-left:10px;
-    padding-left:0px;
-    border-radius:0px 5px 5px 0px;
-  
-    
-}
- .skill_percent{
-    height:14px;
-    background-color: rgb(28, 74, 180);
-    position: relative;
-    animation-name:sk;
-    animation-timing-function: ease-in;
-    animation-duration:2.5s;
-  
 
-}
-
-
-@keyframes sk{
-    0%{
-        width:0%;
-    }
-    100%{
-        width:100%;
-    } 
-}
 
 .pro{
     text-align: center;
@@ -422,23 +442,39 @@ font-weight: 300;
  }
  .git img:hover{
     filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
-    /* box-shadow: 0px -1px 13px 9px var(--main-bg-color);
--webkit-box-shadow: 0px -1px 13px 9px var(--main-bg-color);
--moz-box-shadow: 0px -1px 13px 9px var(--main-bg-color); */
 
-    /* box-shadow: 1px 2px 18px 4px var(--main-bg-color);
--webkit-box-shadow: 1px 2px 18px 4px rgb(255,141,88) ;
--moz-box-shadow: 1px 2px 18px 4px var(--main-bg-color); */
-
-    /* box-shadow: 1px 2px 18px 4px rgb(222, 214, 214);
--webkit-box-shadow: 1px 2px 18px 4px rgb(251, 247, 247);
--moz-box-shadow: 1px 2px 18px 4px rgb(238, 226, 226); */
-/* filter: blur(2px); */
  }
  .git:hover .links{
     display: block;
  }
-
+ 
+ .Certification{
+    background-image: url(photos/about\ pg.jpg);
+    width:auto;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    
+ }
+.Certificates{
+    /* max-width: fit-content; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:100px;
+    
+    
+}
+.about_duration{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+.about_duration h6{
+    /* align-self: flex-end; */
+}
  .section_5 {
     width: 100%;
     height:auto; 
@@ -608,11 +644,37 @@ font-weight: 300;
         display: block;
     
     }
+    .about{
+        margin-top: 100px;
+    }
+    .about #hello{
+        font-size: 40px;
+        font-weight:300;
+    }
 
 }
-/* @media  screen and (max-width:420px)  {
-    .contain{
-   display: none;
+@media  screen and (max-width:410px)  {
+    .about{
+        text-align: center;
+        margin: 0;
     }
-  
-} */
+    .about h1{
+        margin-top: 100px;
+        margin-left:50px;
+    }
+    .about #hello{
+        font-size: 40px;
+        font-weight:300;
+        margin-top:100px;
+        margin-left:10px;
+    }
+    .about h3{
+        margin-left: 50px;
+    }
+  .connect1{
+    margin-left: 50px;
+  }
+ .About_section  button{
+    margin-left:120px;
+  }
+}
