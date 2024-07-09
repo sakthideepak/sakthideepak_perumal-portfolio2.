@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: Allura;
-     src:url(Roboto_Slab/Allura-Regular.ttf);
+    src:url(Roboto_Slab/Allura-Regular.ttf);
 }
 *{
     overflow-x: hidden;
@@ -305,10 +305,10 @@ font-weight: 300;
     margin-top: 10px;
 }
 .year{
-    margin-top:120px
+    margin-top:130px
 }
 .year2{
-   margin-top:129px;
+   margin-top:134px;
 }
 
 .dot:first-child{
@@ -331,11 +331,12 @@ font-weight: 300;
     border-radius: 50%;
     background-color:black;
     position: relative;
+    /* margin-top:10px; */
 }
 .line0{
     display:flex;
     width:3px;
-    height:145px;
+    height:154px;
     background-color:black;
     margin-left:3px;
     position: relative;
@@ -345,7 +346,7 @@ font-weight: 300;
 .line1{
     display:flex;
     width:3px;
-    height:136px;
+    height:143px;
     background-color:black;
     margin-left:3px;
     position: relative;
@@ -360,6 +361,13 @@ font-weight: 300;
     position: relative;
     
 }
+@media  screen and (max-width:520px)  {
+  .line0{
+    height: 172px;
+  }
+      
+       
+    }
 .Education_data{
     margin-left: 30px;
  
@@ -472,9 +480,9 @@ font-weight: 300;
     justify-content: space-between;
    
 }
-.about_duration h6{
-    /* align-self: flex-end; */
-}
+/* .about_duration h6{
+    /* align-self: flex-end; 
+} */
  .section_5 {
     width: 100%;
     height:auto; 
