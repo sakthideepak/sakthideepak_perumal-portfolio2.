@@ -56,9 +56,14 @@ html{
 .about {
     text-align: start;
     animation: left-right 1.5s ease-in-out;
-    margin-top:200px;
-    margin-left: 100px;
+    margin-top:150px;
+    margin-left:600px;
+ 
 }
+.about h1{
+    margin-left:60px;
+}
+
 
 @keyframes left-right {
     0% {
@@ -80,19 +85,17 @@ font-weight: 300;
 width:65%;
 letter-spacing: -2px;
 }
-/* .information h2{
-margin-left: 100px; 
-animation: left-right 1.5s ease-in-out;
-color: black;
 
-} */
 .information h3{
-margin-left: 100px; 
+margin-left: 500px;
 animation: left-right 1.5s ease-in-out;
 color: black;
 width:65%;
 font-size: 33px;
 font-weight: 300;
+}
+#lastone{
+ margin-left: 600px;
 }
 
 .about #hello {
@@ -129,49 +132,9 @@ font-weight: 300;
     }
   }
 
-/* .information button{
-    margin-left:200px; 
-    width: 100px;
-    animation: left-right 1.5s ease-in-out;  
-} */
-.image{
-    background-color: var(--secondary-bg-color);
-
-}
-.image img{
-    width:80%;
-    height:600px;
-    position: relative;
-   
-}
-.contain{
-    display: flex;
-    width:25%;
-    height:50%;
-    border-radius: 50%;
-    background-color:rgb(59,105,202);
-    position:absolute;
-    margin-left:0px;
-    margin-top: 20px; 
-}
-.contain1{
-    display: flex;
-    width:20%;
-    height:40%;
-    border-radius: 50%;
-    background-color:rgb(59,105,202);
-    position:absolute;
-    
-    margin-left:230px;
-    margin-top: 330px;
-    
-}
-.image img:hover{
-    filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
-}
 
 .connect1{
-    margin:30px 0px 0px 92px;
+    margin:30px 0px 0px 630px;
    
  
  }
@@ -189,6 +152,24 @@ font-weight: 300;
     filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
     
  }
+ .text-start a{
+  width:150px;
+  background-color: transparent;
+  color: black;
+  margin-left:670px;
+  margin-top:20px;
+  border-color: rgb(29, 29, 29);
+ 
+ }
+.text-start .down{
+    animation: visit 2s ease infinite;
+}
+ @keyframes visit {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+    
+}
 .resume{
     background-color:whitesmoke;
     
@@ -467,7 +448,7 @@ font-weight: 300;
     
  }
 .Certificates{
-    /* max-width: fit-content; */
+   
     margin-left: auto;
     margin-right: auto;
     margin-bottom:100px;
@@ -480,9 +461,7 @@ font-weight: 300;
     justify-content: space-between;
    
 }
-/* .about_duration h6{
-    /* align-self: flex-end; 
-} */
+
  .section_5 {
     width: 100%;
     height:auto; 
@@ -520,7 +499,7 @@ font-weight: 300;
  }
  .connect i:hover{
     color:whitesmoke;
-    /* border: 2px solid rgb(0, 0, 0); */
+   
     filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
     
  }
@@ -535,8 +514,7 @@ font-weight: 300;
 
  .section_5 #count2{
     margin-top: 100px;
-    /* display:inline-block;
-    text-align: start; */
+  
  }
  #count2 input,textarea,button{
     border-radius:5px;
@@ -606,13 +584,29 @@ font-weight: 300;
       
   }
 
-/* *::-webkit-scrollbar{
-    /* width: 0; 
-    background:transparent;
-} */
+
 .markee{
     display: none;
 }
+@media  screen and (max-width:1350px) {
+    .about{
+     margin-left:470px;
+    }
+    .information h3{
+        margin-left:370px;
+    }
+    #lastone{
+        margin-left: 450px;
+    }
+    .connect1{
+        margin-left: 500px;
+    }
+    .text-start a{
+        margin-top:30px;
+        margin-left: 550px;
+    }
+}
+
 @media  screen and (max-width:1200px) {
     .contain{
         display: none;
@@ -620,20 +614,57 @@ font-weight: 300;
     .contain1{
         display: none;
     }
-    .image img{
-        margin-bottom:20px;
-    }
+   
      .markee{
         display:block;
      }
 }
+@media  screen and (max-width:990px) {
+    .about{
+     margin-left:340px;
+    }
+    .information h3{
+        margin-left:240px;
+    }
+    #lastone{
+        margin-left: 320px;
+    }
+    .connect1{
+        margin-left: 370px;
+    }
+    .text-start a{
+        margin-top:20px;
+        margin-left: 420px;
+    }
+}
 @media  screen and (max-width:800px)  {
+    .about{
+        margin-left:0px;
+       }
+       .about h1{
+        margin-left: 70px;
+       }
+       .about #hello{
+        margin-left: 20px;
+       }
+       .information h3{
+           margin-left:70px;
+          
+       }
+       #lastone{
+           margin-left:70px;
+       }
+       .connect1{
+           margin-left:90px;
+       }
+       .text-start a{
+           margin-top:20px;
+           margin-left:100px;
+       }
     .contain{
         display: none;
     }
-    .image img{
-      display: none;
-    }
+   
     .markee{
         display: block;
     }
@@ -659,21 +690,24 @@ font-weight: 300;
         font-size: 40px;
         font-weight:300;
     }
+    .connect1{
+        margin-left:70px;
+    }
 
 }
 @media  screen and (max-width:410px)  {
     .about{
         text-align: center;
-        margin: 0;
+        
     }
     .about h1{
-        margin-top: 100px;
+       
         margin-left:50px;
     }
     .about #hello{
         font-size: 40px;
         font-weight:300;
-        margin-top:100px;
+        margin-top:50px;
         margin-left:10px;
     }
     .about h3{
@@ -682,7 +716,5 @@ font-weight: 300;
   .connect1{
     margin-left: 50px;
   }
- .About_section  button{
-    margin-left:120px;
-  }
+
 }
