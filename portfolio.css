@@ -85,7 +85,12 @@ font-weight: 300;
 width:65%;
 letter-spacing: -2px;
 }
+/* .information h2{
+margin-left: 100px; 
+animation: left-right 1.5s ease-in-out;
+color: black;
 
+} */
 .information h3{
 margin-left: 500px;
 animation: left-right 1.5s ease-in-out;
@@ -132,6 +137,46 @@ font-weight: 300;
     }
   }
 
+/* .information button{
+    margin-left:200px; 
+    width: 100px;
+    animation: left-right 1.5s ease-in-out;  
+} */
+/* .image{
+    background-color: var(--secondary-bg-color);
+
+}
+.image img{
+    width:80%;
+    height:600px;
+    position: relative;
+   
+}
+.contain{
+    display: flex;
+    width:25%;
+    height:50%;
+    border-radius: 50%;
+    background-color:rgb(59,105,202);
+    position:absolute;
+    margin-left:0px;
+    margin-top: 20px; 
+}
+.contain1{
+    display: flex;
+    width:20%;
+    height:40%;
+    border-radius: 50%;
+    background-color:rgb(59,105,202);
+    position:absolute;
+    
+    margin-left:230px;
+    margin-top: 330px;
+    
+}
+.image img:hover{
+    filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
+} */
 
 .connect1{
     margin:30px 0px 0px 630px;
@@ -448,7 +493,7 @@ font-weight: 300;
     
  }
 .Certificates{
-   
+    /* max-width: fit-content; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom:100px;
@@ -461,7 +506,13 @@ font-weight: 300;
     justify-content: space-between;
    
 }
-
+.accordion-body .getting_cer img{
+    width: 800px;
+    align-items: center;
+}
+/* .about_duration h6{
+    /* align-self: flex-end; 
+} */
  .section_5 {
     width: 100%;
     height:auto; 
@@ -499,7 +550,7 @@ font-weight: 300;
  }
  .connect i:hover{
     color:whitesmoke;
-   
+    /* border: 2px solid rgb(0, 0, 0); */
     filter: drop-shadow(5px 5px 2px rgb(0 0 0 / 10));
     
  }
@@ -514,7 +565,8 @@ font-weight: 300;
 
  .section_5 #count2{
     margin-top: 100px;
-  
+    /* display:inline-block;
+    text-align: start; */
  }
  #count2 input,textarea,button{
     border-radius:5px;
@@ -584,7 +636,10 @@ font-weight: 300;
       
   }
 
-
+/* *::-webkit-scrollbar{
+    /* width: 0; 
+    background:transparent;
+} */
 .markee{
     display: none;
 }
@@ -614,7 +669,9 @@ font-weight: 300;
     .contain1{
         display: none;
     }
-   
+    /* .image img{
+        margin-bottom:20px;
+    } */
      .markee{
         display:block;
      }
@@ -649,7 +706,7 @@ font-weight: 300;
        }
        .information h3{
            margin-left:70px;
-          
+           /* text-wrap: nowrap; */
        }
        #lastone{
            margin-left:70px;
@@ -664,9 +721,14 @@ font-weight: 300;
     .contain{
         display: none;
     }
-   
+    /* .image img{
+      display: none;
+    } */
     .markee{
         display: block;
+    }
+    .accordion-body .getting_cer img{
+        width:500px;
     }
      
 }
@@ -694,14 +756,18 @@ font-weight: 300;
         margin-left:70px;
     }
 
+    .accordion-body .getting_cer img{
+        width: 320px;
+    }
+
 }
 @media  screen and (max-width:410px)  {
     .about{
         text-align: center;
-        
+        /* margin: 0; */
     }
     .about h1{
-       
+        /* margin-top: 100px; */
         margin-left:50px;
     }
     .about #hello{
@@ -716,5 +782,10 @@ font-weight: 300;
   .connect1{
     margin-left: 50px;
   }
-
+ .About_section  button{
+    /* margin-left:120px; */
+  }
+  .accordion-body .getting_cer img{
+    width: 320px;
+}
 }
